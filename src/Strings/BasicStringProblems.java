@@ -117,4 +117,20 @@ Note: Order should be maintained
         }
         return false;
     }
+
+    public static String firstLetterCapitalOfEachWord(String str) {
+        char[] charArr = str.toCharArray();
+
+        for(int i=0; i<charArr.length; i++) {
+            // k stores index of 1st character
+            int k = i;
+            while(i<charArr.length && charArr[i] != ' ') {
+                i++;
+            }
+            if(charArr[k] >= 'a' && charArr[k] <= 'z') {
+                charArr[k] = (char) ((int)charArr[k] - 32);
+            }
+        }
+        return new String(charArr);
+    }
 }
