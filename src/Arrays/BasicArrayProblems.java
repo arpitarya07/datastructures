@@ -22,10 +22,10 @@ public class BasicArrayProblems {
 
     private static int missingElement(int[] arr1, int[] arr2) {
         int sum1=0, sum2=0, missingElement;
-        for (int i=0; i<=arr1.length-1;i++) {
+        for (int i=0; i<=arr1.length-1; i++) {
             sum1 = sum1+arr1[i];
         }
-        for (int i=0; i<=arr2.length-1;i++) {
+        for (int i=0; i<=arr2.length-1; i++) {
             sum2 = sum2+arr2[i];
         }
         missingElement=sum1-sum2;

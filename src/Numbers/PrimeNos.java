@@ -3,7 +3,7 @@ package Numbers;
 public class PrimeNos {
     public static void main(String[] args) {
         PrimeNos primeNos = new PrimeNos();
-        primeNos.primeOrNot(13);
+        primeNos.primeOrNot(12);
     }
 
     public void primeOrNot(int num) {
